@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Tailwind And Daisy UI CDN -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Style CDN -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container mx-auto">
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                            <a href=""><img class="mx-4 inline lg:hidden" src="./Images/icons8-search-16.png"
+                                    alt="">Search Now</a>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl font-extrabold">HOCKEY'S</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href=""><img class="mx-4 hidden lg:block" src="./Images/icons8-search-16.png" alt=""></a>
+                    <a class="btn btn-active bg-red-500 text-white border-0 px-5">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- Banner Starts Here -->
+        <section>
+            <div class="carousel  w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-full flex gap-5 -translate-y-20 transform ">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src=https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-full flex gap-5 -translate-y-20 transform ">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                        class="w-full" />
+                    <div class="absolute left-5 right-5 top-full flex gap-5 -translate-y-20 transform ">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div
+                class="p-9 bg-black text-white text-center lg:text-left lg:w-1/2 rounded-lg lg:translate-x-3/4 lg:-translate-y-48  lg:ml-32 ">
+                <h1 class="text-xl font-bold">Meet All The Heroes From The Field</h1> <br>
+                <p class="font-extralight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat recusandae
+                    mollitia asperiores odio
+                    ad eum ipsa vero qui ullam et!</p>
+            </div>
+
+        </section>
+        <hr>
+        <!-- Banner Ends Here -->
+
+        <!-- Progressbar Starts Here -->
+        <section class="text-center">
+            <h1 class="text-2xl font-extrabold">Professional Hockeys Club</h1> <br>
+            <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, <br> similique!
+                Accusamus quam adipisci quidem cumque consequuntur similique, earum dignissimos? Ex?</p>
+
+
+
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 gap-10">
+                <div>
+                    <div class="radial-progress text-orange-500" style="--value:87;" role="progressbar">87%</div>
+                    <h4 class="text-xl font-bold mt-5 mb-3">Prayer Facility</h4>
+                    <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatum, culpa!\</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-pink-300" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="text-xl font-bold mt-5 mb-3">Experienced Coach</h4>
+                    <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatum, culpa!\</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="text-xl font-bold mt-5 mb-3">Senior Players</h4>
+                    <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatum, culpa!\</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="text-xl font-bold mt-5 mb-3">Training Ground</h4>
+                    <p>Lorem ipsum dolor <br> sit amet consectetur adipisicing elit. Voluptatum, culpa!\</p>
+                </div>
+
+
+            </section>
+        </section>
+        <!-- Progressbar ends Here -->
+        <hr>
+
+        <!-- Program Starts Here -->
+        <section class="mt-20 mx-10">
+            <h3 class="text-center text-2xl font-bold ">Program Sections</h3>
+            <p class="text-center text-lg mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate <br>
+                quia maxime, ex adipisci commodi animi quae earum ratione.</p>
+
+
+            <section class="text-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+                <div class="bg-[url('/Images/2.png')] bg-no-repeat bg-cover p-10">
+                    <h1 class="font-bold text-xl mt-5">Junior Program</h1>
+                    <p class="text-sm mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis placeat
+                        nesciunt dolorem deleniti tenetur quia porro</p>
+                    <a class="btn btn-active my-3 bg-red-500 text-white border-0 ">Get Ticket</a>
+                </div>
+                <div class="bg-[url('/Images/3.png')] bg-no-repeat bg-cover p-10">
+                    <h1 class="font-bold text-xl mt-5">Teenager Program</h1>
+                    <p class="text-sm mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis placeat
+                        nesciunt dolorem deleniti tenetur quia porro</p>
+                    <a class="btn btn-active my-3 bg-red-500 text-white border-0 ">Get Ticket</a>
+                </div>
+                <div class="bg-[url('/Images/4.png')] bg-no-repeat bg-cover p-10 lg:col-span-2 ">
+                    <h1 class="font-bold text-xl mt-5">Professional Program</h1>
+                    <p class="text-sm mt-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, <br>
+                        natus! Necessitatibus explicabo cum odio facilis ad! Suscipit unde inventore vel. <br> Aperiam
+                        eveniet nobis id temporibus provident commodi cupiditate impedit dolores.</p>
+                    <a class="btn btn-active my-3 bg-red-500 text-white border-0 ">Get Ticket</a>
+                </div>
+
+            </section>
+        </section>
+        <!-- Program Ends Here -->
+
+
+        <!-- Product Starts Here -->
+        <section class="mt-20 bg-white">
+            <h1 class="text-center text-3xl font-bold">Our New Products</h1>
+            <p class="text-center text-sm mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Earum
+                rerum eveniet accusamus iste! Commodi distinctio aliquam quasi, ut expedita voluptatibus?</p>
+
+
+
+            <section class="grid grid-cols-1 lg:grid-cols-2 gap-5 m-3">
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero lg:m-5 p-3 border border-red-950 rounded-lg ">
+                    <div class="hero-content flex-col lg:flex-row gap-10">
+                        <div>
+                            <img src="./Images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        </div>
+                        <div>
+                            <div class="flex gap-5">
+                              <div class="rating flex gap-2">
+                                <input type="radio" class="mask mask-star-2 bg-yellow-400 w-4 h-4 mt-0.5" />
+                                <p class="text-sm">5.0</p>
+                              </div>
+                              <div class="rating flex ">
+                               <img class="h-4 w-4 mt-0.5" src="./Images/icons8-eye-50.png" alt="">
+                                <p class="text-sm">20</p>
+                              </div>
+                              <div class="rating flex">
+                                <img class="h-4 w-4 mt-0.5" src="./Images/icons8-love-50.png" alt="">
+                                <p class="text-sm">200</p>
+                              </div>
+                         
+                            </div>
+                            <div>
+                                <h1 class="text-xl mt-2 font-bold">World Cup Flags Football</h1>
+                                <p class="py-3 font-light text-sm">
+                                    Provident cupiditate voluptatem et <br> in. Quaerat fugiat juidf lokijh
+                                </p>
+                            </div>
+                            <div class="flex gap-5 text-sm font-bold">
+                                <p class="text-orange-600 font-bold ">Price-$22.00</p>
+                                <div class="flex">
+                                    <img class="w-5 h-5" src="./Images/icons8-shopping-50.png" alt="">
+                                    <p>Delivery Fee: Free</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Product Ends Here -->
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
